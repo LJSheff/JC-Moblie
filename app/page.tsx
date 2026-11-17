@@ -9,6 +9,7 @@ const services = [
   ["03", "Brakes, clutches & repairs", "Need a repair? Tell Josh what’s happening and he’ll confirm whether the work can be carried out on-site.", "Repairs assessed individually"],
   ["04", "Timing belts & timing chains", "Timing belt and timing chain replacements. Tell Josh your vehicle details so he can discuss the work needed and confirm whether it can be carried out on-site.", "Timing belt & chain replacements"],
   ["05", "Pre-MOT checks", "Get your car checked ahead of its MOT and understand any potential issues that may need attention.", "Checks before test day"],
+  ["06", "Pre-purchase inspections", "Thinking of buying a used car? Ask Josh to inspect it before you buy, helping you understand its condition and any issues that may need attention.", "Vehicle checks before you buy"],
 ];
 const reviews = [
   ["Grant Stockman", "Brilliant mechanic and reliable"],
@@ -48,6 +49,7 @@ const localBusiness = {
       { "@type": "OfferCatalog", name: "Brakes, clutches and mechanical repairs" },
       { "@type": "OfferCatalog", name: "Timing belt and timing chain replacements" },
       { "@type": "OfferCatalog", name: "Pre-MOT checks" },
+      { "@type": "OfferCatalog", name: "Pre-purchase inspections" },
     ],
   },
   sameAs: ["https://www.facebook.com/jcmobilemechanicrotherham/"],
