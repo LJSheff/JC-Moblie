@@ -29,8 +29,16 @@ const localBusiness = {
   url: "https://www.jcmobile.co.uk/",
   image: "https://www.jcmobile.co.uk/jc-mobile-van.png",
   telephone: "+44 7799 543101",
-  description: "Mobile vehicle diagnostics, servicing, repairs and pre-MOT checks in Rotherham and surrounding areas.",
-  areaServed: { "@type": "Place", name: "Rotherham, South Yorkshire" },
+  description: "Mobile vehicle diagnostics, servicing, repairs, timing belts, timing chains and pre-MOT checks across Rotherham, Sheffield, Doncaster, Barnsley, Worksop, Retford and North Chesterfield.",
+  areaServed: [
+    { "@type": "Place", name: "Rotherham" },
+    { "@type": "Place", name: "Sheffield" },
+    { "@type": "Place", name: "Doncaster" },
+    { "@type": "Place", name: "Barnsley" },
+    { "@type": "Place", name: "Worksop" },
+    { "@type": "Place", name: "Retford" },
+    { "@type": "Place", name: "North Chesterfield" },
+  ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Mobile mechanic services",
@@ -68,7 +76,7 @@ export default function Home() {
       <div className="service-grid">{services.map(([number, title, copy, detail]) => <article className="service-tile" key={number}><div className="service-tile-top"><span className="service-number">{number} / {String(services.length).padStart(2, "0")}</span><span className="service-symbol" aria-hidden="true">↗</span></div><div><h3>{title}</h3><p>{copy}</p></div><div className="service-tile-bottom"><span>{detail}</span><a href="#enquire" aria-label={`Ask Josh about ${title}`}>Enquire <span aria-hidden="true">→</span></a></div></article>)}</div>
       <p className="service-note">Not every repair can be completed on-site. Send Josh a few details about your car and he’ll let you know what’s possible.</p>
     </section>
-    <section className="about-band" id="about"><div className="about-image"><Image src="/jc-mobile-van.png" alt="Josh from JC Mobile Mechanic standing beside his branded van" fill quality={90} sizes="(max-width: 720px) 720px, (max-width: 1440px) 1080px, 75vw"/></div><div className="about-copy"><p className="eyebrow">MEET YOUR LOCAL MECHANIC</p><h2>Hi, I'm Josh.<br/><span>I come to you.</span></h2><p className="about-lead">I'm the person behind JC Mobile Mechanic, providing mobile servicing, diagnostics and repairs across Rotherham and the surrounding areas.</p><p>As an <strong>ex main dealer technician</strong> with <strong>over 10 years of experience</strong>, my aim is simple: explain what's wrong, talk you through your options and carry out the work at your home or workplace whenever possible.</p><p>You'll deal directly with me from your first message to the completed job. If something needs workshop equipment, I'll let you know.</p><div className="about-actions"><a className="button primary" href="#enquire">Ask Josh for a quote <b aria-hidden="true">→</b></a><span>ONE MECHANIC. PERSONAL SERVICE.</span></div></div></section>
+    <section className="about-band" id="about"><div className="about-image"><Image src="/jc-mobile-van.png" alt="Josh from JC Mobile Mechanic standing beside his branded van" fill quality={90} sizes="(max-width: 720px) 720px, (max-width: 1440px) 1080px, 75vw"/></div><div className="about-copy"><p className="eyebrow">MEET YOUR LOCAL MECHANIC</p><h2>Hi, I'm Josh.<br/><span>I come to you.</span></h2><p className="about-lead">I'm the person behind JC Mobile Mechanic, providing mobile servicing, diagnostics and repairs across Rotherham, Sheffield, Doncaster, Barnsley, Worksop, Retford and North Chesterfield.</p><p>As an <strong>ex main dealer technician</strong> with <strong>over 10 years of experience</strong>, my aim is simple: explain what's wrong, talk you through your options and carry out the work at your home or workplace whenever possible.</p><p>You'll deal directly with me from your first message to the completed job. If something needs workshop equipment, I'll let you know.</p><div className="about-actions"><a className="button primary" href="#enquire">Ask Josh for a quote <b aria-hidden="true">→</b></a><span>ONE MECHANIC. PERSONAL SERVICE.</span></div></div></section>
     <section className="reviews section" id="reviews">
       <div className="reviews-top"><div><p className="eyebrow">WHAT CUSTOMERS SAY</p><h2>Good work.<br/><span>Good word of mouth.</span></h2></div><div className="reviews-top-aside"><p>Choosing someone to work on your car is a big decision. Hear what customers have said about Josh and JC Mobile Mechanic.</p><a href="https://www.facebook.com/jcmobilemechanicrotherham/reviews/?id=100071424180682&sk=reviews" target="_blank" rel="noopener noreferrer" className="reviews-source-link">See reviews on Facebook <span aria-hidden="true">↗</span></a></div></div>
       <div className="review-grid">

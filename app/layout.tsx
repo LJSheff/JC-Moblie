@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const siteUrl = "https://www.jcmobile.co.uk";
+const description = "Mobile mechanic covering Rotherham, Sheffield, Doncaster, Barnsley, Worksop, Retford and North Chesterfield. Diagnostics, servicing, repairs, timing belts and chains at home or work.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -9,8 +10,7 @@ export const metadata: Metadata = {
     default: "Mobile Mechanic Rotherham | JC Mobile Mechanic",
     template: "%s | JC Mobile Mechanic",
   },
-  description:
-    "Need a mobile mechanic in Rotherham? Contact Josh at JC Mobile Mechanic for vehicle diagnostics, servicing, repairs and pre-MOT checks at home or work.",
+  description,
   applicationName: "JC Mobile Mechanic",
   alternates: { canonical: "/" },
   openGraph: {
@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "JC Mobile Mechanic",
     title: "Mobile Mechanic in Rotherham | JC Mobile Mechanic",
-    description: "Vehicle diagnostics, servicing and repairs at your home or workplace. Speak directly with Josh about your car.",
+    description,
     images: [{ url: "/jc-mobile-van.png", width: 2048, height: 945, alt: "Josh beside the JC Mobile Mechanic van" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mobile Mechanic in Rotherham | JC Mobile Mechanic",
-    description: "Diagnostics, servicing and repairs at your home or workplace across Rotherham and surrounding areas.",
+    description,
     images: ["/jc-mobile-van.png"],
   },
   robots: { index: true, follow: true },
